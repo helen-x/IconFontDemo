@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IconFontDemo</string>
+    <string name="iconfont_mastercard">&#xf1f1;</string>
+    <string name="iconfont_codepen">&#xf1cb;</string>
+</resources>

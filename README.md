@@ -2,6 +2,7 @@
 
 >Demo地址: [IconFontDemo](https://github.com/helen-x/IconFontDemo)      
 >阿里开发iconfont库:[http://www.iconfont.cn/plus](http://www.iconfont.cn/plus)  
+>简书地址:[http://www.jianshu.com/p/09e3598219ea](http://www.jianshu.com/p/09e3598219ea)
  
 ## IconFont介绍 
 __IconFont__实际是把图片做在字体文件(.ttf)中.   
@@ -9,14 +10,16 @@ ttf文件中每个图片对应的一个unicode码.
 TextView 设置文字的时候,使用对应的unicode码就能显示出图片.      
 
 打开iconfont.ttf, 可以看到里面全是图片   
- <img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5yg30Zu4aicd1r1kRmQdJM9E5icFXVU1Lu6cnAgia3nM1Sibw7m4elIb1PKkA/0?wx_fmt=png" width = "40%"  align=center /> 
+
+
+![Snip20161215_15.png](http://upload-images.jianshu.io/upload_images/4048192-212f17281f0835fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
 
-假如在iconfont.ttf里面.  unicode码"\&#xf1cb;"对应的是"visa"这个图片,   
-那么__android:text="文字和图片\&#xf1cb;混排"__ 显示效果如下  
+假如在iconfont.ttf里面.  unicode码"&\#xf1cb;"对应的是"visa"这个图片,   
+那么__android:text="文字和图片&\#xf1cb;混排"__ 显示效果如下  
  
- <img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5ygf6IGkDMf9HgP2rM8QpmJw5N4ibkxoUjN188zPiavgav6bUlN8PkPNQAA/0?wx_fmt=png" width = "40%"  align=center />  
  
+![Snip20161215_17.png](http://upload-images.jianshu.io/upload_images/4048192-4294ac1202cd280a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
 </br>
 是不是很帅~    
@@ -41,12 +44,13 @@ TextView 设置文字的时候,使用对应的unicode码就能显示出图片.
 ## 使用方法   
 下面以IconFontDemo为例,介绍一下iconfont的使用方法.     
 demo效果如下    
- <img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5yg8qvAtG2d6Ka40ibq5pUfRzfUsZICkibdmIw43Gjve5bdpLibv0DxGib2zw/0?wx_fmt=png" width = "40%"  align=center />      
+ 
+![iconfont_2.png](http://upload-images.jianshu.io/upload_images/4048192-8e3e7fc4a01f21f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
  
  
 ### 1.首先把字体文件拷贝到项目中   
- <img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5yg9ZzMeaEOdb9usXNrTd7frHxIC9uHA2QlFDaTicjO3RLVY5MLlf46wBQ/0?wx_fmt=png" width = "50%"  align=center />     
-
+ 
+![Snip20161215_13.png](http://upload-images.jianshu.io/upload_images/4048192-e6aaef3dd32b9d08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ### 2.自定义TextView,让他可以加载iconfont.ttf   
@@ -96,9 +100,9 @@ public static class IconFontTypeFace {
 
 
 
-### 3. 可以像正常使用TextView一样使用iconfont了.   
-如果要显示iconfont中图片, 需要把text设置为图片对应的unicode码.     
-比如"\&#xf1f0;"对应的是一个图片,我们可以这样使用:    
+### 3. 像正常使用TextView一样使用iconfont.   
+要显示iconfont中图片, 需要把text设置为图片对应的unicode码.       
+比如"&\#xf1f0;"对应的是一个图片,我们可以这样使用:    
 
 ```java 
  <com.helen.iconfont.widget.IconFontTextView
@@ -140,33 +144,29 @@ __阿里iconfont库地址:__  [http://www.iconfont.cn/plus](http://www.iconfont.
 
 #### 1.选择图标文件,加入购物车   
 先选中自己想要的图片, 挨个加入购物车   
-![](https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5yghykTIbhbsHtNY4OricdrxWkeZOkGqqkH6ptzmFs0OrGukGeo1KJIQIA/0?wx_fmt=png)     
+ 
+![iconfont_download.png](http://upload-images.jianshu.io/upload_images/4048192-ae6d29e6c48c000f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 2.购物车中文件下载   
 全部选好后,可以在购物车中下载文件.  
 
-<img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5ygwQIWQMwqRlmUCyzCYHPicXBYVbnv6qmVzT4sIlD6IKNfHGiau4liaPjhA/0?wx_fmt=png" width = "40%"  align=center />    
+
+ 
+![Snip20161215_19.png](http://upload-images.jianshu.io/upload_images/4048192-b216dc6f921fea8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
 </br>
 #### 3.下载的文件中可以看到字体文件(iconfont.ttf) 和对应的编码表  
  
-<img src="https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5yg5Cy4FCmb0oiaRhMHJq2wT04fibHkBhkTTsd7rTQjibmicgahgsBgE5pPFw/0?wx_fmt=png" width = "40%"  align=center />    
-
+ 
+![Snip20161215_14.png](http://upload-images.jianshu.io/upload_images/4048192-3d1149c370ba82b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 </br>
 #### 4. demo_unicode.html 中可以看到字符和unicode字符的对应表.   
-这里\&#xe641; 对应的就是X这个图片
+这里 &\#xe641; 对应的就是X这个图片
 
-![](https://mmbiz.qlogo.cn/mmbiz_png/ENDandl7DNbtCy7Ic8nI4neia9D0DZ5ygHwj0tW5b6QedLuOzGqPMAw20udsz2qEtxt1O5icJ1r74j9Oibfa1IFSg/0?wx_fmt=png) 
-
-
+![iconfont_unicode.png](http://upload-images.jianshu.io/upload_images/4048192-4099507cbda22465.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
  
 #### 5. 有了unicode字符表和iconfont.ttf文件,就可以妥妥的使用了
-
-
-
-
-
 
  
